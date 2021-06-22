@@ -1,0 +1,12 @@
+{
+  "name": "home-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./public/css/style.css",
+    "sass-min": "sass --watch ./scss/main.scss:./public/css/style.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

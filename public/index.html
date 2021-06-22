@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home Interior Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header id="header" class="header">
+      <nav>
+        <a href="#" class="header__logo"
+          ><img src="./images/logo-header.png" alt=""
+        /></a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+
+          <li>
+            <div class="header__searchBtn">
+              <img src="./images/search.svg" alt="" />
+            </div>
+            <div class="header__menuBtn">
+              <img src="./images/menu.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+
+        <button class="header__navBtn"><i class="fas fa-bars"></i></button>
+      </nav>
+
+      <div class="header__text">
+        <h1>We help you make modern interior</h1>
+        <p>
+          We will help you to make an elegant and luxurious interior designed by
+          professional interior designers.
+        </p>
+      </div>
+
+      <div class="header__imageBox">
+        <div class="header__slider">
+          <div class="header__sliderSlides">
+            <img src="./images/header-1.jpg" alt="" />
+            <img src="./images/header-2.jpg" alt="" />
+            <img src="./images/header-3.jpg" alt="" />
+            <img src="./images/header-4.jpg" alt="" />
+            <img src="./images/header-5.jpg" alt="" />
+            <img src="./images/header-6.jpg" alt="" />
+          </div>
+
+          <div class="header__sliderControllers">
+            <button class="header__sliderArrowUp">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+            <button class="header__sliderArrowDown">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+
+            <div class="header__sliderCurrentNumber"></div>
+            <div class="header__sliderLength"></div>
+          </div>
+        </div>
+
+        <a href="#services" class="header__btnDown"
+          ><i class="fas fa-arrow-down"></i
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- services -->
+
+      <section id="services" class="services">
+        <h2>Benefits you get when using our services</h2>
+
+        <div class="services__card">
+          <div class="services__cardImageBox">
+            <img src="./images/icon-quality.svg" alt="" />
+          </div>
+          <div class="services__cardText">
+            <h3>Best Quality</h3>
+            <p>
+              All of our furniture uses the best materials and choices for our
+              customers.
+            </p>
+          </div>
+        </div>
+
+        <div class="services__card">
+          <div class="services__cardImageBox">
+            <img src="./images/icon-shipping.svg" alt="" />
+          </div>
+          <div class="services__cardText">
+            <h3>Free Shipping</h3>
+            <p>
+              Free shipping everytime you buy furniture from us without
+              exception.
+            </p>
+          </div>
+        </div>
+
+        <div class="services__card">
+          <div class="services__cardImageBox">
+            <img src="./images/icon-warranty.svg" alt="" />
+          </div>
+          <div class="services__cardText">
+            <h3>Warranty</h3>
+            <p>
+              Every time you buy our furniture products, you will get a warranty
+              without exception.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience -->
+
+      <section id="experience" class="experience">
+        <div class="experience__imageBox">
+          <img src="./images/experience.jpg" alt="" />
+        </div>
+
+        <div class="experience__text">
+          <h2>We provide you the best experience</h2>
+          <p>
+            You don't worry about the results because all of these interiors are
+            made buy people who are professionals in their fields with an
+            elegant and luxurious style and with premium quality materials.
+          </p>
+
+          <div class="experience__textDetails">
+            <div>
+              <span class="experience__textDetailsNumber" id="years_experience"
+                >17</span
+              >
+              <span class="experience__textDetailsText">Years experience</span>
+            </div>
+            <div>
+              <span class="experience__textDetailsNumber" id="award_gained"
+                >85</span
+              >
+              <span class="experience__textDetailsText">Award gained</span>
+            </div>
+            <div>
+              <span class="experience__textDetailsNumber" id="furnitures_sold"
+                >537</span
+              >
+              <span class="experience__textDetailsText">Furnitures sold</span>
+            </div>
+          </div>
+
+          <a href="#learnmore" class="experience__textBtn">Learn more</a>
+        </div>
+      </section>
+
+      <!-- process -->
+
+      <section id="process" class="process">
+        <div class="process__text">
+          <h2>We provide the best process experience</h2>
+
+          <div class="process__textCard">
+            <span class="process__textCardNumber">01</span>
+            <div>
+              <h3>Briefing</h3>
+              <p>
+                First thing you determine the concept and model you want, then
+                choose what color and materials you want to use in your
+                furniture.
+              </p>
+            </div>
+          </div>
+
+          <div class="process__textCard">
+            <span class="process__textCardNumber">02</span>
+            <div>
+              <h3>Processing</h3>
+              <p>
+                When the briefing process is complete and what the client wants
+                has been achieved. Then we carry the execution of desired
+                concept.
+              </p>
+            </div>
+          </div>
+
+          <div class="process__textCard">
+            <span class="process__textCardNumber">03</span>
+            <div>
+              <h3>Finishing</h3>
+              <p>
+                After the process is complete, we will immediately carry out yhe
+                finishing stage and we do it carefully and make sure there are
+                no mistakes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process__imageBox">
+          <img src="./images/process.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- testimonial -->
+
+      <section id="testimonial" class="testimonial">
+        <h2>What our customers are saying</h2>
+
+        <div class="testimonial__slider">
+          <div class="testimonial__sliderBtns">
+            <button class="testimonial__sliderBtnsPrev">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="testimonial__sliderBtnsNext">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="testimonial__sliderCards">
+            <div class="testimonial__sliderCard">
+              <h3>The results given are very satisfying</h3>
+              <p>
+                &#8220; Being able to work with the exterior is an extraordinary
+                thing they provide excellent service and the results given are
+                also very satisfying by giving elegant impression. &#8221;
+              </p>
+
+              <div class="testimonial__sliderCardAuthor">
+                <img src="./images/testimonial-1.jpg" alt="" />
+                <div>
+                  <span class="testimonial__sliderCardAuthorName"
+                    >Ralph Edwards</span
+                  >
+                  <span class="testimonial__sliderCardAuthorPosition"
+                    >Product manager</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__sliderCard">
+              <h3>The service provided is very good and friendly</h3>
+              <p>
+                &#8220; At that time I wanted to make a chair, then I went to
+                luxterior to make the chair and after it was finished the
+                results were unexpected. The results given are accordance with
+                what I want. &#8221;
+              </p>
+
+              <div class="testimonial__sliderCardAuthor">
+                <img src="./images/testimonial-2.jpg" alt="" />
+                <div>
+                  <span class="testimonial__sliderCardAuthorName"
+                    >Leslie Alexander</span
+                  >
+                  <span class="testimonial__sliderCardAuthorPosition"
+                    >Housewife</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__sliderCard">
+              <h3>The results given are very satisfying</h3>
+              <p>
+                &#8220; Being able to work with the exterior is an extraordinary
+                thing they provide excellent service and the results given are
+                also very satisfying by giving elegant impression. &#8221;
+              </p>
+
+              <div class="testimonial__sliderCardAuthor">
+                <img src="./images/testimonial-3.jpg" alt="" />
+                <div>
+                  <span class="testimonial__sliderCardAuthorName"
+                    >John Doe</span
+                  >
+                  <span class="testimonial__sliderCardAuthorPosition"
+                    >Unknown</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__sliderCard">
+              <h3>Something very important</h3>
+              <p>
+                &#8220; Being able to work with the exterior is an extraordinary
+                thing they provide excellent service and the results given are
+                also very satisfying by giving elegant impression. &#8221;
+              </p>
+
+              <div class="testimonial__sliderCardAuthor">
+                <img src="./images/testimonial-4.jpg" alt="" />
+                <div>
+                  <span class="testimonial__sliderCardAuthorName"
+                    >Jane Main</span
+                  >
+                  <span class="testimonial__sliderCardAuthorPosition"
+                    >Manager</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe -->
+
+      <section id="subscribe" class="subscribe">
+        <h2>Subscribe to get the latest news about us</h2>
+        <p>
+          We recommended you to subscribe to our newspaper, enter your email
+          below to get our daily update about us.
+        </p>
+
+        <form action="#" method="POST">
+          <input type="email" placeholder="Enter your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer id="footer" class="footer">
+      <div class="footer__column">
+        <a href="#" class="footer__columnLogo"
+          ><img src="./images/logo-footer.png" alt=""
+        /></a>
+
+        <p>
+          We will help you to make an elegant and luxurious interior designed by
+          a professional interior designer.
+        </p>
+      </div>
+
+      <div class="footer__column">
+        <h2>About</h2>
+        <ul>
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="#ourteam">Our team</a></li>
+          <li><a href="#partner">Partner with us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2>Support</h2>
+        <ul>
+          <li><a href="#account">Account</a></li>
+          <li><a href="#suport">Support center</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2>Get in touch</h2>
+        <a href="#question">Question or feedback?</a>
+        <p>We'd love to hear from you.</p>
+
+        <ul>
+          <li>
+            <a href="#instagram"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#twitter"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

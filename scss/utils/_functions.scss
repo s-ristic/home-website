@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use './variables' as *;
+
+@function font-weight($value) {
+  @return map.get($font-weights, $value);
+}
+
+@function font-size($value) {
+  @return map.get($font-sizes, $value);
+}
+
+@function font-family($value) {
+  @return map.get($font-families, $value);
+}
+
+@function border-radius($value) {
+  @return map.get($border-radius, $value);
+}
+
+@function box-shadow($value) {
+  @return map.get($box-shadows, $value);
+}

@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+.services {
+  @include grid(1);
+
+  @include mq(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__card {
+    @include flex(row, flex-start, flex-start);
+
+    &ImageBox {
+      position: relative;
+      width: 8rem;
+      height: 6rem;
+      margin-right: 3rem;
+    }
+  }
+}

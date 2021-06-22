@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+.subscribe {
+  position: relative;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 14rem;
+  text-align: center;
+
+  @include mq(lg) {
+    padding-bottom: 8rem;
+  }
+
+  form {
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 1rem;
+    @include flex(column);
+    background: $light-color;
+    box-shadow: box-shadow(m);
+
+    @include mq(lg) {
+      flex-direction: row;
+      width: calc(100% - 20rem);
+      height: 8rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0 1rem;
+      color: $main-color;
+      font-size: font-size(m);
+      margin-bottom: 2rem;
+      @include mq(lg) {
+        padding: 0 2rem;
+        margin-bottom: 0;
+        font-size: font-size(l);
+      }
+    }
+
+    button {
+      padding: 2rem 5rem;
+      background: $main-color;
+      color: $light-color;
+      font-size: font-size(m);
+
+      @include mq(lg) {
+        height: 100%;
+        padding: 0 5rem;
+      }
+    }
+  }
+}

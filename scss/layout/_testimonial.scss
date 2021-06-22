@@ -1,0 +1,91 @@
+@use '../utils' as *;
+
+.testimonial {
+  position: relative;
+
+  &__slider {
+    position: relative;
+
+    &Btns {
+      position: absolute;
+      top: -5rem;
+      right: 0;
+
+      @include mq(lg) {
+        top: -12rem;
+      }
+
+      &Prev {
+        font-size: font-size(xl);
+        color: $main-color;
+        margin-right: 3rem;
+      }
+
+      &Next {
+        font-size: font-size(xl);
+        color: $main-color;
+      }
+    }
+
+    &Cards {
+      @include flex(row, space-between, stretch);
+      overflow: hidden;
+    }
+
+    &Card {
+      position: relative;
+      padding: 2rem;
+      padding-top: 12rem;
+      background: $main-color;
+      color: $light-color;
+      min-width: 100%;
+      @extend %transition;
+
+      @include mq(lg) {
+        padding: 5rem;
+        padding-top: 15rem;
+        min-width: 47.5%;
+        margin-right: 5%;
+      }
+
+      @include pseudo(
+        $content: '\f10d',
+        $top: 3rem,
+        $left: 3rem,
+        $width: initial,
+        $height: initial
+      ) {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: font-size(xxxl);
+
+        @include mq(lg) {
+          top: 5rem;
+          left: 5rem;
+        }
+      }
+
+      &Author {
+        @include flex(row, flex-start, flex-start);
+
+        &Name {
+          display: block;
+          font-size: font-size(m);
+          margin-bottom: 0.5rem;
+        }
+
+        &Position {
+          font-size: font-size(s);
+        }
+
+        img {
+          position: relative;
+          width: 5rem;
+          height: 5rem;
+          border-radius: border-radius(circle);
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

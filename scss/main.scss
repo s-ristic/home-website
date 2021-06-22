@@ -1,0 +1,9 @@
+@use './base/base';
+@use './components';
+@use './layout';
+
+// This comment won't be included in the CSS.
+
+/* But this comment will, except in compressed mode. */
+
+/*! This comment will be included even in compressed mode. */

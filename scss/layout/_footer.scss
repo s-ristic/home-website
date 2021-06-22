@@ -1,0 +1,70 @@
+@use '../utils' as *;
+
+.footer {
+  background: $main-color;
+  padding: 10rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+
+  @include mq(lg) {
+    padding: 15rem 10rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  }
+
+  &__column {
+    &Logo {
+      position: relative;
+      width: 15rem;
+      height: 3.2rem;
+    }
+
+    &:not(:last-of-type) {
+      ul {
+        li {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          color: $light-color;
+          opacity: 0.7;
+          @extend %transition;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      h2 ~ a {
+        color: $light-color;
+        opacity: 0.7;
+        @extend %transition;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      ul {
+        display: flex;
+        margin-top: 3rem;
+
+        li {
+          margin-right: 2rem;
+        }
+
+        a {
+          font-size: font-size(l);
+          color: $light-color;
+          @extend %transition;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

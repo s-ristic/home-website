@@ -1,0 +1,139 @@
+@use '../utils/' as *;
+
+h1 {
+  font-size: font-size(xl);
+  margin-bottom: 2rem;
+
+  @include mq(lg) {
+    font-size: font-size(xxl);
+  }
+}
+
+h2 {
+  font-size: font-size(xxl);
+  color: $text-color;
+}
+
+h3 {
+  font-size: font-size(xl);
+  color: $text-color;
+}
+
+h4 {
+  font-size: font-size(s);
+  color: $main-color;
+}
+
+p {
+  font-size: font-size(m);
+  line-height: 1.8;
+  color: $main-color;
+}
+
+.header {
+  p {
+    color: $light-color;
+    opacity: 0.7;
+    font-size: font-size(s);
+
+    @include mq(lg) {
+      font-size: font-size(m);
+    }
+  }
+}
+
+.services {
+  h2 {
+    position: relative;
+    max-width: 55rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    grid-column: 1/-1;
+
+    @include mq(lg) {
+      margin-left: 23rem;
+    }
+
+    @include pseudo($top: 50%, $left: -8rem, $width: 10rem, $height: 0.3rem) {
+      transform: translateY(-50%) rotate(90deg);
+      background: $main-color;
+
+      @include mq(lg) {
+        left: -23rem;
+        width: 33%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 3rem;
+  }
+}
+
+.experience {
+  h2 {
+    max-width: 50rem;
+    margin-bottom: 5rem;
+
+    @include mq(lg) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.process {
+  h2 {
+    max-width: 55rem;
+    margin-bottom: 8rem;
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+
+    @include mq(lg) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.testimonial {
+  h2 {
+    max-width: 50rem;
+    margin-bottom: 10rem;
+
+    @include mq(lg) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  h3 {
+    color: $light-color;
+  }
+
+  p {
+    color: $light-color;
+    margin: 3rem 0;
+  }
+}
+
+.subscribe {
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer {
+  h2 {
+    color: $light-color;
+    font-size: font-size(l);
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: $light-color;
+    opacity: 0.7;
+    margin-top: 3rem;
+  }
+}

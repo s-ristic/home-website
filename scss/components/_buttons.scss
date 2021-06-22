@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+%btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: font-size(m);
+  font-family: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+  @extend %transition;
+}
