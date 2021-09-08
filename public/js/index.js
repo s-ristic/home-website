@@ -131,8 +131,6 @@ function testimonialNextSlide() {
 testimonialBtnPrev.addEventListener('click', testimonialPrevSlide);
 testimonialBtnNext.addEventListener('click', testimonialNextSlide);
 
-console.log(window.innerWidth);
-
 ////////// form submit
 
 const form = document.querySelector('form');
